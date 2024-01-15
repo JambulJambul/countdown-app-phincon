@@ -1,0 +1,7 @@
+$screen-md-limit: 768px;
+
+@mixin apply-at-md-size {
+    @media(min-width: $screen-md-limit) {
+        @content;
+    }
+}

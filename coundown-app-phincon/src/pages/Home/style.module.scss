@@ -1,0 +1,53 @@
+@import '../../styles/base.scss';
+
+* {
+    font-family: "Fredoka", sans-serif;
+}
+
+h1 {
+    color: $white;
+    letter-spacing: 7px;
+    font-weight: 500;
+    font-size: 16px;
+
+    @include apply-at-md-size {
+        font-size: 48px;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: $very-dark-blue;
+    background-image: url("../../assets/Bg-stars.svg");
+}
+
+#root {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    height: 75vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding: 100px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.countdown-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.rocket-gif {
+    transform: scaleX(-1);
+}

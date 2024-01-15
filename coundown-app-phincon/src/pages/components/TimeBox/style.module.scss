@@ -1,0 +1,43 @@
+@import '../../../styles/base.scss';
+
+.time-box{
+    margin: 0px 10px;
+}
+
+.time-box-number{
+    color: $soft-red;
+    min-width: 55px;
+    min-height: 55px;
+    @include apply-at-md-size{
+        padding: 25px;
+    }
+    background-color: $dark-desaturated-blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.time-box-number>h2{
+    margin: 0;
+    font-size: 24px;
+    @include apply-at-md-size{
+        font-size: 32px;
+    }
+    font-weight: 400;
+}
+
+.time-box-title{
+    margin-top: 10px;
+}
+
+.time-box-title>h3{
+    margin: 0;
+    color: $grayish-blue;
+    letter-spacing: 2px;
+    font-size: 10px;
+    @include apply-at-md-size{
+        font-size: 16px;
+    }
+    font-weight: 400;
+}
